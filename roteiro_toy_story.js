@@ -1,4 +1,4 @@
-async function sendScript(scriptText){
+async function enviarScript(scriptText){
 	const lines = scriptText.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
 	main = document.querySelector("#main"),
 	textarea = main.querySelector(`div[contenteditable="true"]`)
@@ -22,7 +22,7 @@ async function sendScript(scriptText){
 	return lines.length;
 }
 
-sendscript(`
+Enviarscript(`
 01 Sheriff Woody
 [The Walt Disney Pictures logo plays, except the castle is in CGI, while the camera zooms out from its gate. When the logo completes, it zooms out until it fades into a kid's bedroom, with boxes made to look like buildings which are placed in different areas. A kid, Andy Davis, holds a Mr. Potato Head toy in front of one of them]
 Andy (as One-Eyed Bart): Alright, everyone! This is a stick-up! Don't anybody move! Now empty that safe!
