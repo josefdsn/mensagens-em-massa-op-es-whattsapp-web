@@ -1,4 +1,4 @@
-async function sendScript(scriptText){
+async function EnviarScript(scriptText){
 	const lines = scriptText.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
 	main = document.querySelector("#main"),
 	textarea = main.querySelector(`div[contenteditable="true"]`)
@@ -22,7 +22,7 @@ async function sendScript(scriptText){
 	return lines.length;
 }
 
-sendscript(`
+Enviarscript(`
 Ouviram do Ipiranga as margens plácidas
 De um povo heroico, o brado retumbante
 E o Sol da liberdade, em raios fúlgidos
