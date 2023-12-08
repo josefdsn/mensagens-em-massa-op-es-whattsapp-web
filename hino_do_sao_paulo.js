@@ -22,7 +22,7 @@ async function EnviarScript(scriptText){
 	return lines.length;
 }
 
-Enviarcript(`
+EnviarScript(`
 Salve o tricolor paulista
 Amado clube brasileiro
 Tu és forte, tu és grande
