@@ -1,4 +1,4 @@
-async function sendScript(scriptText){
+async function EnviarScript(scriptText){
 	const lines = scriptText.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
 	main = document.querySelector("#main"),
 	textarea = main.querySelector(`div[contenteditable="true"]`)
@@ -22,7 +22,7 @@ async function sendScript(scriptText){
 	return lines.length;
 }
 
-sendscript(`
+Enviarcript(`
 Poppy: Once upon a time... In a happy forest, in the happiest tree... Lived the happiest creatures the world has ever known. The Trolls. They loved nothing more than to sing, and dance, and hug. Dance, and hug, and sing, and dance, and sing, and hug, and dance... And hug, and dance, and sing, and hug, and dance, and hug... But then one day, the Trolls were discovered by... A Bergen! The Bergens didn't know how to sing... Or dance... or even hug. They were the most miserable creatures in all the land. And once they saw how happy the Trolls were... They wanted some of that happiness for themselves. Eating a Troll made them feel so happy... They started a tradition. Once a year, every year... The Bergens would gather around the Troll tree... To taste happiness... On a holiday they called... Trollstice.
 
 Good morning, Daddy!
