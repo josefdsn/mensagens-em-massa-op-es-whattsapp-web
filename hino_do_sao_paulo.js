@@ -1,4 +1,4 @@
-async function EnviarScript(scriptText){
+async function enviarScript(scriptText){
 	const lines = scriptText.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
 	main = document.querySelector("#main"),
 	textarea = main.querySelector(`div[contenteditable="true"]`)
@@ -22,7 +22,7 @@ async function EnviarScript(scriptText){
 	return lines.length;
 }
 
-EnviarScript(`
+enviarScript(`
 Salve o tricolor paulista
 Amado clube brasileiro
 Tu és forte, tu és grande
@@ -51,5 +51,4 @@ Vêm do passado
 Clube bem amado
 As tuas glórias
 Vêm do passado
-O SAO PAULO É 10 CARAMBAAAA
 `).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error)
